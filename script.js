@@ -1,22 +1,19 @@
-function nextSlide(slideNumber) {
-  let currentSlide = document.querySelector('.slide.active');
-  let nextSlide = document.getElementById('slide' + slideNumber);
+const container = document.getElementById("container");
+const registerbtn = document.getElementById("register");
+const loginbtn = document.getElementById("login");
+const signinBtn = document.getElementById("signinBtn");
 
-  if (currentSlide && nextSlide) {
-      currentSlide.classList.remove('active');
-      nextSlide.classList.add('active');
-      
-      nextSlide.style.opacity = 0;
-      setTimeout(() => {
-          nextSlide.style.opacity = 1;
-      }, 600);
-  }
-}
+// Toggle for Sign Up and Sign In
+registerbtn.addEventListener("click", () => {
+  container.classList.add("active");
+});
 
-function transitionToMain() {
-  document.querySelector('.intro-slideshow').style.opacity = 0;
-  setTimeout(() => {
-      document.querySelector('.intro-slideshow').style.display = 'none';
-      window.location.href = "../login/login.html"; // Redirects to login.html in the login folder
-  }, 1000);
-}
+loginbtn.addEventListener("click", () => {
+  container.classList.remove("active");
+});
+
+signinBtn.addEventListener("click", (event) => {
+    event.preventDefault(); // Prevent form submission (if inside a form)
+    window.location.href = "../questions/1index.html"; // Correct path
+  });
+  
