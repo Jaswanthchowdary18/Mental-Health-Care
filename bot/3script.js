@@ -6,7 +6,7 @@ let image = document.querySelector("#image img");
 let imageinput = document.querySelector("#image input");
 let downloadBtn = document.querySelector("#download-pdf");
 
-const Api_Url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyDiErTJpH0qBZipK4pwonBQua6t1IyhHHI";
+const Api_Url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=(enter ur api key)";
 
 let user = {
     message: null,
