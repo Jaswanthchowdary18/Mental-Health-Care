@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serene Mind Wellness - Introduction</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="top-nav">
+    <div class="logo">Serene Mind Wellness</div>
+    <div class="nav-links">
+      <a href="#">About</a>
+      <a href="#">Help</a>
+      <a href="#">Login</a>
+    </div>
+  </div>
+
+  <div class="intro-slideshow">
+    <div class="slide active" id="slide1">
+      <div class="slide-content">
+        <p class="quote">"The greatest glory in living lies not in never falling, but in rising every time we fall."</p>
+        <p class="author">- Nelson Mandela</p>
+        <p class="continue-text" onclick="nextSlide(2)">Click here to continue</p>
+      </div>
+    </div>
+    <div class="slide" id="slide2">
+      <div class="slide-content">
+        <p class="quote">"You yourself, as much as anybody in the entire universe, deserve your love and affection."</p>
+        <p class="author">- Buddha</p>
+        <p class="continue-text" onclick="nextSlide(3)">Click here to continue</p>
+      </div>
+    </div>
+    <div class="slide" id="slide3">
+      <div class="slide-content">
+        <p class="quote">"What lies behind us and what lies before us are tiny matters compared to what lies within us."</p>
+        <p class="author">- Ralph Waldo Emerson</p>
+        <p class="continue-text" onclick="transitionToMain()">Begin Your Journey</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
