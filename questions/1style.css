@@ -1,0 +1,89 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #d1c4e9, #c8e6c9);
+    color: #333;
+}
+
+.checkin-container {
+    width: 90%;
+    max-width: 800px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.checkin-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.checkin-header h1 {
+    color: #4a6572;
+    margin-bottom: 10px;
+}
+
+.checkin-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+}
+
+.checkin-section h2 {
+    color: #5c6bc0;
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.question input[type="number"],
+.question textarea,
+.question select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+.options label {
+    margin-bottom: 8px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #64b5f6, #81c784);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-top: 30px;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}

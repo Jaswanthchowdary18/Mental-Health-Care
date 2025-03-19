@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Well-being Check-in</title>
+    <link rel="stylesheet" href="1style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="checkin-container">
+        <div class="checkin-header">
+            <h1>Mental Well-being Check-in</h1>
+            <p>Let's take a moment to understand how you're feeling.</p>
+        </div>
+
+        <div class="checkin-section">
+            <h2>Your Current State</h2>
+            <div class="question">
+                <label for="feeling">How are you feeling today (1-10)?</label>
+                <input type="number" id="feeling" name="feeling" min="1" max="10">
+            </div>
+            <div class="question">
+                <label for="anxious">Describe any recent feelings of anxiety, stress, or overwhelm:</label>
+                <textarea id="anxious" name="anxious" rows="4"></textarea>
+            </div>
+            <div class="question">
+                <label>Typical mood:</label>
+                <select name="mood">
+                    <option value="stable">Stable</option>
+                    <option value="frequent_swings">Frequent mood swings</option>
+                    <option value="low">Consistently low</option>
+                    <option value="high">Consistently high</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="checkin-section">
+            <h2>Challenges & Support</h2>
+            <div class="question">
+                <label>Hopeless or unmotivated?</label>
+                <div class="options">
+                    <label><input type="radio" name="hopeless" value="yes"> Yes</label>
+                    <label><input type="radio" name="hopeless" value="no"> No</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>Current challenges:</label>
+                <div class="options">
+                    <label><input type="checkbox" name="challenges" value="concentration"> Trouble concentrating</label>
+                    <label><input type="checkbox" name="challenges" value="decision_making"> Difficulty making decisions</label>
+                    <label><input type="checkbox" name="challenges" value="sleep"> Sleep disturbances</label>
+                    <label><input type="checkbox" name="challenges" value="appetite"> Appetite changes</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>Support system?</label>
+                <div class="options">
+                    <label><input type="radio" name="support" value="yes"> Yes</label>
+                    <label><input type="radio" name="support" value="no"> No</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="checkin-section">
+            <h2>Social & Emotional</h2>
+            <div class="question">
+                <label>Frequency of loneliness:</label>
+                <select name="loneliness">
+                    <option value="rarely">Rarely</option>
+                    <option value="sometimes">Sometimes</option>
+                    <option value="often">Often</option>
+                    <option value="always">Always</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>Comfort expressing emotions?</label>
+                <div class="options">
+                    <label><input type="radio" name="expression" value="yes"> Yes</label>
+                    <label><input type="radio" name="expression" value="no"> No</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>Severity of conflicts (1-5):</label>
+                <input type="number" name="conflicts" min="1" max="5">
+            </div>
+        </div>
+
+        <button onclick="submitForm()">Submit Check-in</button>
+        
+    </div>
+    <script src="1script.js"></script>
+</body>
+</html>
