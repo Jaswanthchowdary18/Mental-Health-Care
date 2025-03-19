@@ -1,0 +1,109 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+    color: #333;
+}
+
+.website-header {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #5f9ea0;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+    color: #2e7d32;
+}
+
+.assessment-container {
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+}
+
+.question-container {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#questionNumber {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+input[type="text"], textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.next-button {
+    padding: 15px 30px;
+    background: linear-gradient(to right, #64b5f6, #81c784);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.next-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.options button {
+    margin: 10px;
+    width: 200px; /* Increased width */
+    padding: 15px 30px; /* Increased padding */
+    border: none;
+    border-radius: 15px; /* Rounded corners */
+    font-size: 1.2em; /* Increased font size */
+    cursor: pointer;
+    background-color: #e3f2fd;
+    color: #1976d2;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.options button:hover {
+    background-color: #bbdefb;
+}
+
+.options label {
+    margin-bottom: 8px;
+}
